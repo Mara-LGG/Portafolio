@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+
+<ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Mi perfil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contacto</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Proyectos</a>
+  </li>
+</ul>
+<section class="hero">
+    <!-- Sección Mi Perfil -->
+    <header >
+        <h1>Mi perfil</h1>
+        <h2>Mara Lizette González Gándara</h2>
+        <img src="./image/foto1.jpeg" alt="Foto de perfil" width="200" height="200">
+    </header>
+
+    <!-- Sección Acerca de mí -->
+    <section id="acerca-de-mi">
+        <h2>Acerca de mí</h2>
+        <p>Soy una persona apasionada por la tecnología y la psicología. Me gusta aprender cosas nuevas y ayudar a los demás.</p>
+
+        <h3>Qué estudié</h3>
+        <p>Ingenieria en sistemas computacionales</p>
+        <p>Psicología</p>
+
+        <h3>Dónde vivo</h3>
+        <p>Estado de México, Naucalpan</p>
+    </section>
+
+    <hr>
+
+    <!-- Formulario para que me contacten -->
+    <section>
+        <h2 id="formulario-contacto">Formulario de contacto</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+                <p>Por favor, ingresa tu nombre completo.</p>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <p>Por favor, ingresa tu dirección de correo electrónico.</p>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="number">Número de teléfono:</label><br>
+                <input type="tel" id="number" name="number" required>
+                <p>Por favor, ingresa tu número de teléfono.</p>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <p>Por favor, ingresa tu mensaje.</p>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Contactar</button>
+            </div>
+        </form>
+    </section>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

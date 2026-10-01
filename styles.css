@@ -1,0 +1,113 @@
+/*Selectores*/
+/*Selector de elemento o etiqueta*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/*header {
+    text-align: center;
+    background-color: #9d92a7;
+    padding: 20px;
+}*/
+
+section {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #3d4e5f;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #65798f;
+    border-radius: 30px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+/*Selectores de clase*/
+.form-group {
+    color: #333;
+}
+
+/*Selector de id*/
+#nombre, #email, #number, #mensaje {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-contacto {
+    color: #050505;
+    font-size: 18px;
+}
+
+#acerca-de-mi {
+    color: #6b88a7;
+    font-size: 18px;
+}
+
+
+/*Selector universal*/
+* {
+    box-sizing: border-box;
+}
+
+/*Selectores agrupados*/
+h1,h2,h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/*Propiedades comunes*/
+p {
+    font-size: 17px;
+    color: #555;
+    margin: 10px 0;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 10px;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(181, 178, 182, 0.849),
+            rgba(202, 197, 238, 0.952)
+        ),
+        url("../image/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
