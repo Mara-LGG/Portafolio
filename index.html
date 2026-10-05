@@ -1,84 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Mi Perfil</title>
     <link rel="stylesheet" href="styles.css">
-   
+
 </head>
+
+<nav class="navbar bg-dark border-bottom border-body p-3 item"  data-bs-theme="dark" >
+    <a class="navbar-brand" href="#inicio">Mi Perfil</a>
+    <a class="navbar-brand" href="#acerca-de-mi">Sobre mí</a>
+    <a class="navbar-brand" href="#habilidades">Habilidades</a>
+    <a class="navbar-brand" href="#proyectos">Proyectos</a>
+    <a class="navbar-brand" href="#contacto">Contacto</a>
+  </nav>
+</nav>
+
 <body>
+    <header id="inicio" class="hero">
 
-<ul class="nav nav-underline">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Mi perfil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contacto</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Proyectos</a>
-  </li>
-</ul>
-<section class="hero">
-    <!-- Sección Mi Perfil -->
-    <header >
-        <h1>Mi perfil</h1>
-        <h2>Mara Lizette González Gándara</h2>
-        <img src="./image/foto1.jpeg" alt="Foto de perfil" width="200" height="200">
-    </header>
+        <div class="hero-contenido">
 
-    <!-- Sección Acerca de mí -->
-    <section id="acerca-de-mi">
-        <h2>Acerca de mí</h2>
-        <p>Soy una persona apasionada por la tecnología y la psicología. Me gusta aprender cosas nuevas y ayudar a los demás.</p>
-
-        <h3>Qué estudié</h3>
-        <p>Ingenieria en sistemas computacionales</p>
-        <p>Psicología</p>
-
-        <h3>Dónde vivo</h3>
-        <p>Estado de México, Naucalpan</p>
-    </section>
-
-    <hr>
-
-    <!-- Formulario para que me contacten -->
-    <section>
-        <h2 id="formulario-contacto">Formulario de contacto</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required>
-                <p>Por favor, ingresa tu nombre completo.</p>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-                <p>Por favor, ingresa tu dirección de correo electrónico.</p>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="number">Número de teléfono:</label><br>
-                <input type="tel" id="number" name="number" required>
-                <p>Por favor, ingresa tu número de teléfono.</p>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <p>Por favor, ingresa tu mensaje.</p>
-            </div>
-            <br>
             <div>
-                <button type="submit">Contactar</button>
+                <p class="saludo">Hola, soy</p>
+
+                <h1>Mara Lizette González Gándara</h1>
+
+                <h2>Desarrolladora en formación</h2>
+
+                <p>
+                    Me interesa la tecnología y el desarrollo web.
+                    Actualmente estoy fortaleciendo mis conocimientos
+                    en HTML, CSS, JavaScript, Java y programación orientada a objetos.
+                </p>
+
+                <a href="#proyectos" class="btn btn-primary">
+                    Ver mis proyectos
+                </a>
+
+                <a href="#contacto" class="btn btn-outline-dark">
+                    Contactarme
+                </a>
             </div>
+
+            <img src="./image/foto1.jpg" alt="Foto de Mara González" class="foto-perfil">
+
+        </div>
+
+    </header>
+    <section id="acerca-de-mi" class="seccion">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Soy una persona apasionada por la tecnología.
+            Me gusta aprender cosas nuevas, resolver problemas y ayudar
+            a los demás.
+        </p>
+
+        <div class="estudios">
+
+            <div>
+                <h3>Ingeniería</h3>
+                <p>Ingeniería en Sistemas Computacionales</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="habilidades" class="seccion">
+
+        <h2>Habilidades</h2>
+
+        <div class="habilidades">
+
+            <div class="habilidad">
+                <h3>HTML</h3>
+                <p>Estructura y semántica de páginas web.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>CSS</h3>
+                <p>Diseño, estilos y maquetación.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>JavaScript</h3>
+                <p>DOM, eventos, funciones y POO.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Bootstrap</h3>
+                <p>Diseño responsive y componentes.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="proyectos" class="seccion">
+
+        <h2>Mis proyectos</h2>
+
+        <div class="proyectos">
+
+            <div class="proyecto">
+                <h3>Sistema bancario</h3>
+
+                <p>
+                    Aplicación desarrollada con JavaScript y programación
+                    orientada a objetos para administrar cuentas bancarias,
+                    depósitos, retiros y transferencias.
+                </p>
+
+                <p>
+                    JavaScript · POO
+                </p>
+
+                <a href="#" class="btn btn-dark">
+                    Ver proyecto
+                </a>
+            </div>
+
+
+            <div class="proyecto">
+                <h3>Administrador de estudiantes</h3>
+
+                <p>
+                    Aplicación web para registrar estudiantes y mostrar
+                    su información dinámicamente utilizando JavaScript,
+                    POO y manipulación del DOM.
+                </p>
+
+                <p>
+                    HTML · CSS · JavaScript · Bootstrap
+                </p>
+
+                <a href="#" class="btn btn-dark">
+                    Ver proyecto
+                </a>
+            </div>
+
+
+            <div class="proyecto">
+                <h3>Lista de tareas</h3>
+
+                <p>
+                    Aplicación para agregar, completar y eliminar tareas
+                    utilizando JavaScript, eventos y manipulación del DOM.
+                </p>
+
+                <p>
+                    HTML · CSS · JavaScript · DOM
+                </p>
+
+                <a href="#" class="btn btn-dark">
+                    Ver proyecto
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacto" class="seccion">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Tienes alguna pregunta o quieres ponerte en contacto conmigo?
+            Puedes enviarme un mensaje.
+        </p>
+
+        <form>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
         </form>
+
     </section>
-    </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
