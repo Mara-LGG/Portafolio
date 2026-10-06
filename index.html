@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portafolio | Mara González - Desarrolladora Web" />
+    <meta property="og:description" content="Proyectos y habilidades en Java, JavaScript, HTML y CSS." />
+    <meta property="og:image" content="https://tu-dominio.com/imagen-de-portada.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Mi Perfil</title>
+    <title>Mara González | Desarrolladora Web Java & JS</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
-<nav class="navbar bg-dark border-bottom border-body p-3 item"  data-bs-theme="dark" >
+<nav class="navbar bg-dark border-bottom border-body p-3 item" data-bs-theme="dark">
     <a class="navbar-brand" href="#inicio">Mi Perfil</a>
     <a class="navbar-brand" href="#acerca-de-mi">Sobre mí</a>
     <a class="navbar-brand" href="#habilidades">Habilidades</a>
     <a class="navbar-brand" href="#proyectos">Proyectos</a>
     <a class="navbar-brand" href="#contacto">Contacto</a>
-  </nav>
+    <a class="navbar-brand" href="#cv">Descargar CV</a>
+</nav>
 </nav>
 
 <body>
@@ -38,11 +42,11 @@
                     en HTML, CSS, JavaScript, Java y programación orientada a objetos.
                 </p>
 
-                <a href="#proyectos" class="btn btn-primary">
+                <a href="#proyectos" class="btn btn-dark" style="padding: 10px 20px;">
                     Ver mis proyectos
                 </a>
 
-                <a href="#contacto" class="btn btn-outline-dark">
+                <a href="#contacto" class="btn btn-outline-primary ms-2" style="padding: 10px 20px;">
                     Contactarme
                 </a>
             </div>
@@ -56,7 +60,7 @@
 
         <h2>Sobre mí</h2>
 
-        <p>
+        <p class="p-titulo">
             Soy una persona apasionada por la tecnología.
             Me gusta aprender cosas nuevas, resolver problemas y ayudar
             a los demás.
@@ -65,8 +69,8 @@
         <div class="estudios">
 
             <div>
-                <h3>Ingeniería</h3>
-                <p>Ingeniería en Sistemas Computacionales</p>
+                <h3 class="p-titulo">Ingeniería</h3>
+                <p class="p-titulo">Ingeniería en Sistemas Computacionales</p>
             </div>
 
         </div>
@@ -75,7 +79,7 @@
 
     <section id="habilidades" class="seccion">
 
-        <h2>Habilidades</h2>
+        <h2 class="p-titulo">Habilidades</h2>
 
         <div class="habilidades">
 
@@ -105,7 +109,7 @@
 
     <section id="proyectos" class="seccion">
 
-        <h2>Mis proyectos</h2>
+        <h2 class="p-titulo">Mis proyectos</h2>
 
         <div class="proyectos">
 
@@ -123,7 +127,10 @@
                 </p>
 
                 <a href="#" class="btn btn-dark">
-                    Ver proyecto
+                    Ver Demo
+                </a>
+                <a href="#" class="btn btn-dark">
+                    Ver el código
                 </a>
             </div>
 
@@ -142,7 +149,10 @@
                 </p>
 
                 <a href="#" class="btn btn-dark">
-                    Ver proyecto
+                    Ver Demo
+                </a>
+                <a href="#" class="btn btn-dark">
+                    Ver el código
                 </a>
             </div>
 
@@ -160,7 +170,10 @@
                 </p>
 
                 <a href="#" class="btn btn-dark">
-                    Ver proyecto
+                    Ver Demo
+                </a>
+                <a href="#" class="btn btn-dark">
+                    Ver el código
                 </a>
             </div>
 
@@ -170,9 +183,9 @@
 
     <section id="contacto" class="seccion">
 
-        <h2>Contacto</h2>
+        <h2 class="p-titulo">Contacto</h2>
 
-        <p>
+        <p class="p-titulo">
             ¿Tienes alguna pregunta o quieres ponerte en contacto conmigo?
             Puedes enviarme un mensaje.
         </p>
@@ -201,6 +214,14 @@
         </form>
 
     </section>
+
+    <footer class="footer">
+
+        <p>
+            &copy; 2024 Mara Lizette González Gándara. Todos los derechos reservados.
+        </p>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

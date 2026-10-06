@@ -10,7 +10,12 @@ body {
     margin: 0;
     font-family: Calibri, sans-serif;
     color: #333;
-    background-color: rgba(131, 116, 136, 0.95);
+    background-color: #111827;
+}
+
+.p-titulo {
+    line-height: 1.6;
+    color: #f8fafc;
 }
 
 .hero {
@@ -24,13 +29,15 @@ body {
 
     background:
         linear-gradient(
-            rgba(181, 178, 182, 0.85),
-            rgba(131, 116, 136, 0.95)
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
         ),
         url("./image/hero.jpg");
 
     background-size: cover;
     background-position: center;
+    
+    color: #ffffff;
 }
 
 .hero-contenido {
@@ -85,6 +92,7 @@ body {
 .seccion h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #f8fafc;
 }
 
 .habilidades,
@@ -131,7 +139,7 @@ body {
 }
 
 button {
-    background-color: #3d4e5f;
+    background-color: #6793c0;
     color: white;
     border: none;
     padding: 12px 25px;
