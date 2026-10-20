@@ -14,17 +14,16 @@
 
 </head>
 
-<nav class="navbar bg-dark border-bottom border-body p-3 item" data-bs-theme="dark">
-    <a class="navbar-brand" href="#inicio">Mi Perfil</a>
-    <a class="navbar-brand" href="#acerca-de-mi">Sobre mí</a>
-    <a class="navbar-brand" href="#habilidades">Habilidades</a>
-    <a class="navbar-brand" href="#proyectos">Proyectos</a>
-    <a class="navbar-brand" href="#contacto">Contacto</a>
-    <a class="navbar-brand" href="#cv">Descargar CV</a>
-</nav>
-</nav>
-
 <body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#inicio">Mi Perfil</a>
+        <a class="navbar-brand" href="#acerca-de-mi">Sobre mí</a>
+        <a class="navbar-brand" href="#habilidades">Habilidades</a>
+        <a class="navbar-brand" href="#proyectos">Proyectos</a>
+        <a class="navbar-brand" href="#contacto">Contacto</a>
+        <a class="navbar-brand navbar-cv" href="./pdf/cv_mara.pdf" download>Descargar CV</a>
+    </nav>
+
     <header id="inicio" class="hero">
 
         <div class="hero-contenido">
@@ -60,17 +59,51 @@
 
         <h2>Sobre mí</h2>
 
-        <p class="p-titulo">
+        <p class="section-intro">
             Soy una persona apasionada por la tecnología.
-            Me gusta aprender cosas nuevas, resolver problemas y ayudar
-            a los demás.
+            Me gusta aprender cosas nuevas, resolver problemas y crear interfaces que se sientan limpias y agradables.
         </p>
 
-        <div class="estudios">
+        <!-- Bloque con una presentación más completa -->
+        <div class="about-layout">
 
-            <div>
-                <h3 class="p-titulo">Ingeniería</h3>
-                <p class="p-titulo">Ingeniería en Sistemas Computacionales</p>
+            <div class="about-card">
+                <p class="about-label">Mi enfoque</p>
+                <h3>Desarrollo.</h3>
+                <p>
+                    Me gusta construir páginas ordenadas, claras y funcionales.
+                    Estoy enfocándome en mejorar mi base en HTML, CSS, JavaScript y Java.
+                </p>
+                <p>
+                    También me interesa que cada proyecto tenga una presentación simple,
+                    elegante y fácil de entender.
+                </p>
+            </div>
+
+            <div class="about-points">
+                <div class="about-point">
+                    <span>01</span>
+                    <div>
+                        <h4>Estudiante</h4>
+                        <p>Ingeniería en Sistemas Computacionales.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <span>02</span>
+                    <div>
+                        <h4>Objetivo</h4>
+                        <p>Crear sitios más limpios, modernos y con buena estructura.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <span>03</span>
+                    <div>
+                        <h4>Lo que me gusta</h4>
+                        <p>Diseño minimalista, orden visual y animaciones sutiles.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -81,26 +114,58 @@
 
         <h2 class="p-titulo">Habilidades</h2>
 
+        <p class="section-intro">
+            Estas son las herramientas y conocimientos técnicos con las que más he trabajado hasta ahora.
+        </p>
+
         <div class="habilidades">
 
             <div class="habilidad">
+                <img src="./image/html-5.png" alt="Ícono de HTML" class="habilidad-icono" loading="lazy">
                 <h3>HTML</h3>
                 <p>Estructura y semántica de páginas web.</p>
             </div>
 
             <div class="habilidad">
+                <img src="./image/css.png" alt="Ícono de CSS" class="habilidad-icono" loading="lazy">
                 <h3>CSS</h3>
                 <p>Diseño, estilos y maquetación.</p>
             </div>
 
             <div class="habilidad">
+                <img src="./image/js.png" alt="Ícono de JavaScript" class="habilidad-icono" loading="lazy">
                 <h3>JavaScript</h3>
                 <p>DOM, eventos, funciones y POO.</p>
             </div>
 
             <div class="habilidad">
+                <img src="./image/bootstrap.png" alt="Ícono de Bootstrap" class="habilidad-icono" loading="lazy">
                 <h3>Bootstrap</h3>
                 <p>Diseño responsive y componentes.</p>
+            </div>
+
+        </div>
+
+        <div class="habilidades">
+
+            <div class="habilidad">
+                <h3>Manipulación del DOM</h3>
+                <p>Creación y modificación dinámica de elementos HTML con JavaScript.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Programación orientada a objetos (POO)</h3>
+                <p>Uso de clases, objetos, propiedades y métodos para organizar el código</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Manejo de arreglos y eventos</h3>
+                <p>Gestión de datos y respuesta a acciones del usuario.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Diseño web responsivo</h3>
+                <p>Creación de interfaces adaptables a distintos dispositivos con CSS y Bootstrap.</p>
             </div>
 
         </div>
@@ -111,70 +176,93 @@
 
         <h2 class="p-titulo">Mis proyectos</h2>
 
+        <p class="section-intro">
+            Aquí te muestro algunos proyectos que pueden servir como muestra de lo que ya sé hacer.
+        </p>
+
+        <!-- Tarjetas con imagen y detalle de cada proyecto -->
         <div class="proyectos">
 
             <div class="proyecto">
-                <h3>Sistema bancario</h3>
+                <img src="./image/proyecto1.jpg" alt="Vista previa del proyecto sistema bancario"
+                    class="proyecto-imagen" loading="lazy">
+                <div class="proyecto-contenido">
+                    <h3>Administrador de Contactos (Agenda Java)</h3>
 
-                <p>
-                    Aplicación desarrollada con JavaScript y programación
-                    orientada a objetos para administrar cuentas bancarias,
-                    depósitos, retiros y transferencias.
-                </p>
+                    <p>
+                        Aplicación de consola orientada a objetos diseñada para la gestión interactiva y
+                        estructurada de contactos telefónicos. Implementa lógica de validación de entradas,
+                        organización por paquetes y un menú dinámico para la navegación del usuario.
+                    </p>
 
-                <p>
-                    JavaScript · POO
-                </p>
+                    <p>
+                        Java · POO
+                    </p>
 
-                <a href="#" class="btn btn-dark">
-                    Ver Demo
-                </a>
-                <a href="#" class="btn btn-dark">
-                    Ver el código
-                </a>
+                    <div class="proyecto-acciones">
+                        <a href="https://github.com/descamillaa98/Hackathon-2" class="btn btn-dark">
+                            Ver el código
+                        </a>
+                    </div>
+                </div>
             </div>
 
 
             <div class="proyecto">
-                <h3>Administrador de estudiantes</h3>
+                <img src="./image/proyecto2.jpg" alt="Vista previa del proyecto administrador de estudiantes"
+                    class="proyecto-imagen" loading="lazy">
+                <div class="proyecto-contenido">
+                    <h3>Red social para gamers 🎮</h3>
 
-                <p>
-                    Aplicación web para registrar estudiantes y mostrar
-                    su información dinámicamente utilizando JavaScript,
-                    POO y manipulación del DOM.
-                </p>
+                    <p>
+                        Aplicación web diseñada para crear una comunidad de videojuegos donde los usuarios
+                        puedan compartir sus experiencias, descubrir nuevos juegos e interactuar con otros jugadores.
+                        Proyecto enfocado en desarrollar una experiencia dinámica e intuitiva mediante tecnologías de
+                        desarrollo web.
+                    </p>
 
-                <p>
-                    HTML · CSS · JavaScript · Bootstrap
-                </p>
+                    <p>
+                        HTML · CSS · JavaScript · Bootstrap
+                    </p>
 
-                <a href="#" class="btn btn-dark">
-                    Ver Demo
-                </a>
-                <a href="#" class="btn btn-dark">
-                    Ver el código
-                </a>
+                    <div class="proyecto-acciones">
+                        <a href="https://luduss.github.io/Proyecto-integrador/" class="btn btn-dark">
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/LUDUSS/Proyecto-integrador" class="btn btn-dark">
+                            Ver el código
+                        </a>
+                    </div>
+                </div>
             </div>
 
 
             <div class="proyecto">
-                <h3>Lista de tareas</h3>
+                <img src="./image/proyecto3.png" alt="Vista previa del proyecto lista de tareas" class="proyecto-imagen"
+                    loading="lazy">
+                <div class="proyecto-contenido">
+                    <h3>Administrador de tareas</h3>
 
-                <p>
-                    Aplicación para agregar, completar y eliminar tareas
-                    utilizando JavaScript, eventos y manipulación del DOM.
-                </p>
+                    <p>
+                        Desarrollé un administrador de tareas con HTML, CSS, JavaScript y Bootstrap. Permite registrar,
+                        eliminar y completar tareas,
+                        asignar prioridades, personalizar colores y visualizar el progreso mediante contadores y una
+                        barra de avance.
+                    </p>
 
-                <p>
-                    HTML · CSS · JavaScript · DOM
-                </p>
+                    <p>
+                        HTML · CSS · JavaScript · DOM
+                    </p>
 
-                <a href="#" class="btn btn-dark">
-                    Ver Demo
-                </a>
-                <a href="#" class="btn btn-dark">
-                    Ver el código
-                </a>
+                    <div class="proyecto-acciones">
+                        <a href="https://verdant-tulumba-1cd41f.netlify.app" class="btn btn-dark">
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/Mara-LGG/administrador_tareas" class="btn btn-dark">
+                            Ver el código
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -185,33 +273,68 @@
 
         <h2 class="p-titulo">Contacto</h2>
 
-        <p class="p-titulo">
+        <p class="section-intro">
             ¿Tienes alguna pregunta o quieres ponerte en contacto conmigo?
             Puedes enviarme un mensaje.
         </p>
 
-        <form>
+        <!-- Formulario y tarjeta de apoyo -->
+        <div class="contacto-grid">
+            <form id="contacto-form" class="contacto-form">
 
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-            </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <div class="invalid-feedback" id="nombre-feedback"></div>
+                </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-            </div>
+                <div class="form-group">
+                    <label for="correo">Email</label>
+                    <input type="email" id="correo" name="email" placeholder="tu@email.com">
+                    <div class="invalid-feedback" id="correo-feedback"></div>
+                </div>
 
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                    <div class="invalid-feedback" id="mensaje-feedback"></div>
+                </div>
+                <div class="content-button">
+                    <button type="submit">
+                        Enviar mensaje
+                    </button>
+                    <div id="mensajeEstado" class="mt-3"></div>
+                </div>
 
-            <button type="submit">
-                Enviar mensaje
-            </button>
 
-        </form>
+            </form>
+
+            <aside class="contacto-card">
+                <p class="about-label">Redes</p>
+                <h3>Encuéntrame aquí</h3>
+                <p>
+                    Puedes revisar mis perfiles y ver un poco más de mi trabajo.
+                </p>
+
+                <div class="social-links">
+                    <a class="social-link" href="https://github.com/Mara-LGG" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/github/11141a" alt="Logo de GitHub" class="social-icon">
+                        <span>GitHub</span>
+                    </a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/mara-gonzalez-/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-2.png&r=0&g=0&b=0"
+                            alt="Logo de LinkedIn" class="social-icon">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+
+                <p>
+                    También puedes usar el formulario si quieres escribirme directamente.
+                </p>
+            </aside>
+        </div>
 
     </section>
 
@@ -222,6 +345,9 @@
         </p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./JS/email.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
